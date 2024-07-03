@@ -1,4 +1,4 @@
-# projet-groupe-1
+# projet-Piluleo
 HACKATHON « OPEN PROJECT IoT »
 
 Pillulier connecté
