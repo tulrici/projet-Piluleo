@@ -1,5 +1,5 @@
 <?php
 interface PillBoxInterface {
-    public function addPillToCompartment();
-    public function removePillToCompartment();
+    public function addPillToCompartment(Pill $Pill, int $compartment);
+    public function removePillFromCompartment(Pill $Pill, int $compartment);
 }

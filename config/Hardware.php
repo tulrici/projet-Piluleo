@@ -2,7 +2,7 @@
 
 return [
     'led_pins' => [
-        'led1' => 17,
+        'powerLED' => 12,
         'led2' => 27
     ],
     'presence_sensor_pins' => [
@@ -12,10 +12,17 @@ return [
         'sensor4' => 25
     ],
     'step_motor_pins' => [
-        'motor1' => [5, 6, 13, 19]
+        'motor1' => [18, 23, 24, 25]
     ],
     'button_pins' => [
-        'button1' => 20,
-        'button2' => 21
+        'powerButton' => 27,
+        'connectButton' => 17,
+        'alertButton'=> 4
+    ],
+    'electroMagnet_pins' => [
+        'matin' => 26,
+        'midi' => 19,
+        'soir' => 21,
+        'coucher' => 20
     ]
 ];

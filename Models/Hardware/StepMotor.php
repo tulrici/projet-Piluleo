@@ -3,9 +3,9 @@ namespace App\Hardware;
 
 class StepMotor {
     public function __construct(
-        array $controlPins
+        array $controlPins = [0,0,0,0]
     ) {}
-    public function rotate($steps){
+    public function rotateOnce(int $steps){
         // logic to rotate motor
     }
 }

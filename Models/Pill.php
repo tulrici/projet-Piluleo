@@ -3,6 +3,7 @@ class Pill {
     public function __construct(
         private int $id,
         private string $name,
+        private string $takingTime,
         private int $dosage,
         private int $freqency,
         private int $userId
