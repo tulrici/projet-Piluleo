@@ -1,0 +1,53 @@
+/* Variable couleur */
+body {
+  background-color: #fc984a;
+  font-family: Poppins;
+  width: 90%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header nav ul li {
+  padding: 15px;
+  vertical-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header nav ul li img {
+  padding: 15px;
+}
+
+ul#boutons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4em;
+}
+ul#boutons li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+ul#boutons li img {
+  max-height: 200px;
+}
+ul#boutons li span {
+  margin-top: 1em;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
