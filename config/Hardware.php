@@ -3,7 +3,7 @@
 return [
     'led_pins' => [
         'powerLED' => 12,
-        'led2' => 27
+        'connectLED' => 27
     ],
     'presence_sensor_pins' => [
         'sensor1' => 22,

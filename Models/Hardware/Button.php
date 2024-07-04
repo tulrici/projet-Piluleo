@@ -3,7 +3,7 @@ namespace App\Hardware;
 
 class Button {
     public function __construct(
-        private int $pin
+        private int $pin= 0
     ) {}
     public function isPressed(){
         // renvoi True si bouton pressé

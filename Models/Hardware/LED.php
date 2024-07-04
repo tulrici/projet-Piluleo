@@ -4,7 +4,7 @@ namespace App\Hardware;
 
 class LED {
     public function __construct(
-        public int $pin
+        public int $pin = 0
     ) {}
     public function turnOn() {
         // Logic to turn ON the LED

@@ -4,19 +4,33 @@ require_once 'Models/PillBox.php';
 require_once 'Models/Hardware/Button.php';
 require_once 'Models/Hardware/LED.php';
 
-$cponnexionButtonData =;
-$connexionLEDData =;
+$connectButtonPin = 17; //utiliser le fichier Hardware à terme
+$connectLEDPin = 27; //utiliser le fichier Hardware à terme
 
-$connexionButton = new Button(cponnexionButtonData);
-$connexionLED = new LED(connexionLEDData);
+$PowerButtonPin = 17; //utiliser le fichier Hardware à terme
+$PowerLEDPin = 27; //utiliser le fichier Hardware à terme
+
+$connectButton = new Button($connexionButtonPin);
+$connectLED = new LED($connexionLEDPin);
+
+$PowerButton = new Button($PowerButtonPin);
+$PowerLED = new LED($powerLEDPin);
 
 //test connexion
 //if()
 
 
-
-
-
+//test Power ON/OFF
+$power = false;
+$PowerButton->addEventListener('pressed', function() use (&$power, $PowerLED) {
+    if (!$power) {
+        $PowerLED->turnOn();
+        $power = true;
+    } else {
+        $PowerLED->turnOff();
+        $power = false;
+    }
+});
 
 //test moteur
 $motorData =  [18, 23, 24, 25];
