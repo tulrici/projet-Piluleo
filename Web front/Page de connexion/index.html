@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="horloge.js" defer></script>
+    <script src="police.js" defer></script>
+</head>
+<body>
+
+    <div id="horloge"></div>
+
+    <main>
+
+        <div class="haut">
+
+            <div class="connexion">
+                <p>Panel de connexion</p>
+            </div>
+        
+            <div class="fontSizeControl">
+                Taille de police : 
+                <button id="decreaseFont">a</button>
+                <span>-</span>
+                <button id="increaseFont">A</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <div class="login-container">
+        <form class="login-form">
+            <p class="heading">Connexion</p>
+            <p class="paragraph">Connectez-vous à votre compte</p>
+            <div class="input-group">
+                <input required="" placeholder="Entrez votre nom d'utilisateur" id="NomUtilisateur" type="text"/>
+            </div>
+            <div class="input-group">
+                <input required="" placeholder="Entrez votre mot de passe" name="motdepasse" id="motdepasse" type="password"/>
+            </div>
+            <button type="submit" class="button-submit">Connexion</button>
+            <div class="bottom-text">
+                <p><a href="#">Mot de passe oublié?</a></p>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

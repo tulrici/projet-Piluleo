@@ -1,0 +1,294 @@
+/* RESET CSS */ 
+
+/* supprime les marges et padding par défaut de tout les élements */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  
+  
+  
+  
+  }
+  /* Change l'espace entre les lignes de 1.5 car de base il est a 1.2 et c'est pas recommandé
+  et le webkit c'est pour MACos*/
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  /* C'est pour gérer tout ces élements dans des blocks et avec une max width de 100%*/
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /* Corrige le fait que tout les boutons aient des polices par défaut */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /* Permet des retours a la ligne afin que ca soit responsive et que le texte ne déborde pas sur la barre
+  de défilement a droite   */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+body {background-color: #00A1E4;
+font-family: poppins;
+font-size: 16px;}
+
+#horloge {text-align: center;
+margin-top: 25px;}
+
+
+#fontSizeControl {
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+main {
+
+
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+
+.haut {display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+height: 5vh;
+font-size: 20px;
+border-bottom: 3px solid white;
+
+padding: 40px;
+
+}
+
+.connexion {margin-left: 20px;
+font-size: 30px;}
+
+.fontSizeControl {margin-right: 20px;
+    font-size: 30px;
+}
+
+.formulaire {
+    background-color: red;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 40px;
+    
+    
+    
+    
+
+}
+
+#Validez {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+border-radius: 20px;
+width: 80%;}
+
+#Validez {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 40px; /* Add margin-top to center the button vertically */
+    margin-bottom: 60px; /* Add margin-bottom for spacing */
+    align-self: center; /* Add align-self to center the button horizontally */
+    cursor: pointer;
+}
+
+form p {text-align: center;}
+
+
+
+
+
+
+.login-container {
+    
+    background-color: #FC984A;
+    border-radius: 8px;
+    box-shadow: rgb(31 31 31 / 17%) 0px -23px 25px 0px inset,
+      rgb(108 108 108 / 23%) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+      rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+      rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 50px auto;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .heading {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 5px;
+  }
+  
+  .paragraph {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    background: white;
+    border: 1px solid #ffffff;
+    padding: 15px 23px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: #070707;
+    width: 100%;
+  
+  }
+  
+  .input-group input:focus {
+    border-color: #0173ed;
+    outline: none;
+  }
+  
+  button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0173ed;
+  }
+  
+  .bottom-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .bottom-text a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 20px;
+  }
+  
+  .bottom-text a:hover {
+    color: #3f95f2;
+  }
+
+  input[type="text"]::placeholder {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  }
+  
+  input[type="password"]::placeholder {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  }
+  
+
+
+
+
+  #horloge { font-size: 40px;}
+  
+.button-submit {color: white;
+font-size: 25px;}
+
+
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  #horloge {
+    margin-top: 15px;
+  }
+
+  main {
+    width: 95vw;
+    margin-top: 30px;
+  }
+
+  .haut {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .connexion {
+    margin-left: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .fontSizeControl {
+    margin-right: 0;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .haut {
+    padding: 15px;
+  }
+
+  .connexion {
+    font-size: 20px;
+  }
+
+  .fontSizeControl {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
