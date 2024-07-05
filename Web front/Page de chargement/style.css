@@ -1,0 +1,199 @@
+/* RESET CSS */ 
+
+/* supprime les marges et padding par défaut de tout les élements */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  
+  
+  
+  
+  }
+  /* Change l'espace entre les lignes de 1.5 car de base il est a 1.2 et c'est pas recommandé
+  et le webkit c'est pour MACos*/
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  /* C'est pour gérer tout ces élements dans des blocks et avec une max width de 100%*/
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /* Corrige le fait que tout les boutons aient des polices par défaut */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /* Permet des retours a la ligne afin que ca soit responsive et que le texte ne déborde pas sur la barre
+  de défilement a droite   */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+
+
+
+
+
+
+  
+
+/* Couleur de fond de toute la page */ 
+  body {background-color: #00A1E4;
+  font-family: poppins;}
+
+
+
+/* Propriété du bloc du TITRE */ 
+
+  .titre {display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;}
+
+
+/* Propriétés du H1  */ 
+  .titre h1 { display: flex;
+    justify-content: center;
+    align-items: center;
+color: #fff;
+font-size: 170px;
+height: 20vh;
+width: 100%;}
+
+
+/* Propriété du logo de la page principale */
+
+.logomain {
+    text-align: center;
+    font-size: 180px;
+}
+
+.option-container {
+ display: flex;
+ flex-direction: row;
+ justify-content: end;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+}
+
+.option-container i {
+  font-size: 60px;
+}
+
+.option-container a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.option-text {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.option-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Propriété du bouton Connexion */ 
+
+.buttoncontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;   
+}
+
+/* Propriété du texte du bouton */ 
+
+button {
+  padding: 1.3em 3em;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+/* Propriété du bouton quand on passe la souris dessus */
+
+button:hover {
+  background-color: #4923c4;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+
+@media (max-width: 768px) {
+  .titre h1 {
+      font-size: 6.5em;
+  }
+  
+  .logomain {
+      font-size: 5em;
+  }
+
+  .option-container {
+      justify-content:center;
+      
+      padding: 3.5em;
+    
+  }
+
+  .option-container i {
+      font-size: 2em;
+  }
+
+  .option-text {
+      font-size: 2.2em;
+  }
+
+  button {
+      font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .titre h1 {
+      font-size: 5em;
+  }
+  
+  .logomain {
+      font-size: 5.5em;
+  }
+
+  .option-container {
+      justify-content: center;
+      font-size: 1.5em;
+      padding: 0.3em;
+  }
+
+  .option-container i {
+      font-size: 1.5em;
+  }
+
+  .option-text {
+      font-size: 1em;
+  }
+
+  button {
+      font-size: 1em;
+
+  }
+}
