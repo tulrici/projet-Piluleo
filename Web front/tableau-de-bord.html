@@ -1,40 +1,59 @@
 <!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accueil - Piluleo</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Accueil - Piluleo</title>
-  <link href="css/style.css" rel="stylesheet"/>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-    <div id="logo">
-      <a href="index.html"><img src="images/logo.svg" alt="Logo de l'application"/></a>
-    </div>
-    <nav>
-      <ul>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html"
+          ><img src="images/logo.svg" alt="Logo de l'application"
+        /></a>
+      </div>
+      <div id="conteneur_horloge">
+        <img src="images/horloge.svg" alt="icone horloge" />
+        <div id="horloge">
+          <div id="time"></div>
+          <div id="date"></div>
+        </div>
+      </div>
+      <nav>
+        <button type="button" id="menu_bouton">Menu</button>
+        <ul id="menu_deroulant">
+            <li><a href="reglages.html"><img src="images/reglages.svg" alt="Réglages"> Réglages</a></li>
+            <li><a href="profile.html"><img src="images/utilisateur.svg" alt="Jeanne"> Jeanne</a></li>
+            <li><a href="#"><img src="images/deconnexion.svg" alt="Déconnexion"> Déconnexion</a></li> 
+        </ul>  
+      </nav>
+    </header>
+    <main>
+      <ul id="boutons">
         <li>
-          <img src="images/reglages.svg" alt="icone de réglage"/>Réglages
+          <img src="images/ou-jen-suis.svg" alt="Bouton ou j'en suis" /><span
+            >Où j'en suis ?</span
+          >
         </li>
         <li>
-          <img src="images/utilisateur.svg" alt="icone d'utilisateur"/>Jeanne
+          <img src="images/ordonnances.svg" alt="Bouton ordonnaces" /><span
+            >Ordonnances</span
+          >
         </li>
         <li>
-          <img src="images/deconnexion.svg" alt="icone de déconnexion"/>Déconnexion
+          <img src="images/danger.svg" alt="Bouton danger" /><span
+            >Signaler un danger</span
+          >
         </li>
       </ul>
-    </nav>
-  </header>
-    <main>
-        <ul id="boutons">
-          <li><img src="images/ou-jen-suis.svg" alt="Bouton ou j'en suis"><span>Où j'en suis ?</span></li>
-          <li><img src="images/ordonnances.svg" alt="Bouton ordonnaces"><span>Ordonnances</span></li>
-          <li><img src="images/danger.svg" alt="Bouton danger"><span>Signaler un danger</span></li>
-        </ul>
     </main>
-</body>
-
+    <script src="js/menuDeroulant.js"></script>
+    <script src="js/horloge.js"></script>
+  </body>
 </html>

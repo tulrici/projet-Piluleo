@@ -1,6 +1,9 @@
 /* Variable couleur */
 $cfond: #fc984a;
-
+a {
+  text-decoration:none;
+  color: black;
+}
 body {
   background-color: $cfond;
   font-family: Poppins;
@@ -8,17 +11,59 @@ body {
   max-width: 75rem;
   margin: 0 auto;
 }
+
 li {
   list-style-type: none;
 }
 
-
 header {
   display: flex;
-  justify-content: space-between;
+  flex: 0 1 auto;
   align-items: center;
 
+  div#conteneur_horloge {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    div#horloge {
+      font-size: 1em;
+      font-weight: bold;
+    }
+
+    img {
+      width: 35px;
+      height: 35px;
+      margin-right: 10px;
+    }
+  }
+
   nav {
+    display: flex;
+    align-items: center;
+
+    #menu_bouton {
+      cursor: pointer;
+    }
+
+    #menu_deroulant {
+      display: none;
+      /* Initially hidden */
+      width: 100%;
+
+      img {
+        width: 20px;
+        /* Adjust the size as needed */
+        height: auto;
+        margin-right: 8px;
+        /* Adds some space between the image and the text */
+        vertical-align: middle;
+        /* Aligns the image with the text */
+      }
+    }
+
     ul {
       display: flex;
       flex-direction: row;
@@ -38,20 +83,24 @@ header {
     }
   }
 }
+
 ul#boutons {
-  display:flex;
+  display: flex;
   justify-content: space-around;
-  margin-top:4em;
-li {
-  display:flex;
-  flex-direction:column;
-  text-align: center;
-  img {
-    max-height:200px;
+  margin-top: 4em;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    img {
+      max-height: 200px;
+    }
+
+    span {
+      margin-top: 1em;
+      font-size: 1.5rem;
+    }
   }
-  span {
-    margin-top:1em;
-    font-size:1.5rem;
-  }
-}
 }
