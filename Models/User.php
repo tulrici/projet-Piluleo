@@ -16,7 +16,7 @@ class User implements UserInterface {
         private string $password = '',
         private string $email = ''
     ) {
-        // Initialize PDO connection
+        // Initialize PDO connection PDO in the constructor ?
         $this->pdo = $this->initializePDO();
     }   
         //replace your_username, your_password, your_database with your our database credentials

@@ -7,10 +7,19 @@ class Pill {
         private string $takingTime,
         private int $dosage,
         private int $userId,
-        PDO $pdo
     ) {
-        $this->db = $pdo;
+        // Initialize PDO connection
+        $this->db = $this->initializePDO();    
     }
+        // Replace your_username, your_password, your_database with your actual database credentials
+        private function initializePDO(): PDO {
+            $host = 'localhost';
+            $username = 'your_username';
+            $password = 'your_password';
+            $database = 'your_database';
+    
+            return new PDO("mysql:host=$host;dbname=$database", $username, $password);
+        }
     public function getId(): int {
         return $this->id;
     }
