@@ -1,11 +1,12 @@
 <?php
-require_once "StepMotor.php";
+require_once "Models/Hardware/StepMotor.php";
+use App\Hardware\StepMotor;
 class PillBox implements PillBoxInterface{
     public function __construct(
         private int $id,
         private int $userId,
         private array $compartments,
-        private StepMotor $motor
+        private StepMotor $Motor
     ){}
     public function getId(): int{
         return $this->id;
@@ -23,6 +24,6 @@ class PillBox implements PillBoxInterface{
         unset($this->compartments[$compartment][array_search($Pill, $this->compartments[$compartment])]);
     }
     public function rotateOnce(){
-        $this->motor->rotateOnce(73); // 73 steps pour 2048steps/7jours/4momentsdelajournée
+        $this->Motor->rotateOnce(73); // 73 steps pour 2048steps/7jours/4momentsdelajournée
     }
 }
