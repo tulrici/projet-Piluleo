@@ -1,4 +1,9 @@
 /* Variable couleur */
+a {
+  text-decoration: none;
+  color: black;
+}
+
 body {
   background-color: #fc984a;
   font-family: Poppins;
@@ -13,8 +18,45 @@ li {
 
 header {
   display: flex;
-  justify-content: space-between;
+  flex: 0 1 auto;
   align-items: center;
+}
+header div#conteneur_horloge {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header div#conteneur_horloge div#horloge {
+  font-size: 1em;
+  font-weight: bold;
+}
+header div#conteneur_horloge img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav #menu_bouton {
+  cursor: pointer;
+}
+header nav #menu_deroulant {
+  display: none;
+  /* Initially hidden */
+  width: 100%;
+}
+header nav #menu_deroulant img {
+  width: 20px;
+  /* Adjust the size as needed */
+  height: auto;
+  margin-right: 8px;
+  /* Adds some space between the image and the text */
+  vertical-align: middle;
+  /* Aligns the image with the text */
 }
 header nav ul {
   display: flex;
