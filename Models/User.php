@@ -1,4 +1,9 @@
 <?php
+namespace App\Models;
+require_once 'UserInterface.php';
+use App\Interfaces\UserInterface;
+use PDO;
+
 class User implements UserInterface {
 
     public function __construct(
@@ -6,7 +11,7 @@ class User implements UserInterface {
         private string $firstName = '',
         private string $lastName = '',
         private string $password = NULL,
-        private string $email = '',
+        private string $email = ''
     ) {}
 
     public function login(){
@@ -53,7 +58,7 @@ class User implements UserInterface {
         $pdo = null;
     }
     public function register(){
-
+        //to be made
     }
     public function updateProfile() {
         // Assuming you have a MySQL connection established
@@ -80,8 +85,6 @@ class User implements UserInterface {
         // Close the PDO connection
         $pdo = null;
     }
-
-
     
     public function getId():int {
         return $this->id;
@@ -97,5 +100,17 @@ class User implements UserInterface {
     }
     public function getEmail(): string {
         return $this->email;
+    }
+    public function getUserByEmail($email){
+        // Assuming you have a MySQL connection established
+        $host = 'localhost';
+        $user = new user;
+        //to be made
+        return $user;
+    }
+    public function createUser($name, $email, $password){
+        // Assuming you have a MySQL connection established
+        $host = 'localhost';
+        //to be made
     }
 }

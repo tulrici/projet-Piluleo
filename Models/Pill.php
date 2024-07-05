@@ -5,7 +5,6 @@ class Pill {
         private string $name,
         private string $takingTime,
         private int $dosage,
-        private int $freqency,
         private int $userId
     ) {}
     public function getId(): int {
@@ -16,9 +15,6 @@ class Pill {
     }
     public function getDosage(): int {
         return $this->dosage;
-    }
-    public function getFrequency(): int {
-        return $this->freqency;
     }
     public function getUserId(): int {
         return $this->userId;
