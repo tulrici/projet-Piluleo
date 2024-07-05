@@ -19,10 +19,6 @@ $connectLED = new LED($connexionLEDPin);
 $PowerButton = new Button($PowerButtonPin);
 $PowerLED = new LED($powerLEDPin);
 
-//test connexion
-//if()
-
-
 //test moteur
 $motorData =  [18, 23, 24, 25];
 
@@ -49,3 +45,8 @@ $PillBox0->rotateOnce();
 $PillBox0->rotateOnce();
 
 
+// Example usage LED faut definir le state
+if (isset($_GET['state'])) {
+    $state = $_GET['state'];
+    $PowzeLED->toggleLED($state);
+}
